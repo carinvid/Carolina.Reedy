@@ -6,13 +6,29 @@
   <title>My Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portafolio Website</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha512-0S+nbAYis87iX26mmj/+fWt1MmaKCv80H+Mbo+Ne7ES4I6rxswpfnC6PxmLiw33Ywj2ghbtTw0FkLbMWqh4F7Q=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/regular.min.css"
+    integrity="sha512-Nqct4Jg8iYwFRs/C34hjAF5og5HONE2mrrUV1JZUswB+YU7vYSPyIjGMq+EAQYDmOsMuO9VIhKpRUa7GjRKVlg=="
+    crossorigin="anonymous" />
+  <!---google fonts-->
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../assets/style.css">
-  <link rel="stylesheet" href="../assets/reset.css">
+
+  <!---got this from normalize.css to help improve forall the brwnsers 
+
+  <link rel="stylesheet" href="../assets/reset.css">-->
+
 </head>
 
 <body>
+
+  <!---Header section-->
+
   <header>
     <section class="logo">
       <img src="../assets/images/Logo.jfif" alt="logo">
@@ -22,35 +38,24 @@
     </button>
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#Home" class="nav-links">Home</a>
+        <li class="nav-item"><a href="#Home" class="nav-links">Home</a>
         </li>
-        <li class="nav-item">
-          <a href="#Projects" class="nav-links">Projects</a>
+        <li class="nav-item"><a href="#Projects" class="nav-links">Projects</a>
         </li>
-        <li class="nav-item">
-          <a href="#Skills" class="nav-links">Skills</a>
+        <li class="nav-item"><a href="#Skills" class="nav-links">Skills</a>
         </li>
-        <li class="nav-item">
-          <a href="#Resume" class="nav-links">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a href="#Contact" class="nav-links">Contact</a>
+        <li class="nav-item"><a href="#Contact" class="nav-links">Contact</a>
         </li>
       </ul>
     </nav>
-    <nav class="navbar-toggle" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </nav>
-
   </header>
 
   <!--Introduction-->
 
   <section class="intro" id="Home">
-    <h1 class="sec-title section__title-intro">Hi, I am<strong><span class="name">Carolina Reedy</span></strong></h1>
+    <h1 class="section__title section__title-intro">Hi, I am
+      <strong>Carolina Reedy</strong>
+    </h1>
     <p class="section__subtitle section__subtitle-intro">front-end dev </p>
     <img src="../assets/images/CarolinaReedy.jpg" alt="picture of Carolina Reedy">
   </section>
@@ -58,27 +63,34 @@
   <!--My Services-->
 
   <section class="my-services" id="services">
-    <h2 class="section__title__title-services">What I Do</h2>
+    <h2 class="section__title title-services">What I Do</h2>
+    <!--service 01-->
     <section class="services">
-      <h3></h3>
-      <p></p>
+      <article class="service">
+        <h3></h3>
+        <p></p>
+      </article>
     </section>
-    <!---end project-->
+
+    <!--service 02-->
 
     <section class="services">
-
+      <article class="service">
+        <h3></h3>
+        <p></p>
+      </article>
     </section>
-    <!---end project-->
 
+    <!--service 03-->
     <section class="services">
-      <h3></h3>
-      <p></p>
+      <article class="service">
+        <h3></h3>
+        <p></p>
+      </article>
     </section>
-    <!---end project-->
-
   </section>
-  <!--end of my projects-->
-  <a href="services" class="btn">My Services</a>
+
+  <a href="#Skills" class="btn">My Skils</a>
 
   <!--about me-->
   <section class="about-me" id="about">
@@ -89,7 +101,7 @@
       <p></p>
       <p></p>
     </section>
-    <img src="../assets/images/sun.jpg" alt="sunset">
+    <img src="../assets/images/laptop.jpg" alt="coding with laptop">
   </section>
 
   <!---My Projects-->
@@ -112,7 +124,7 @@
 
   <!---footer-->
   <footer>
-    <a href="mailtocarinvid@gmail.com" class="footer-link">Gmail</a>
+    <a href="mailtocarinvid@gmail.com" class="footer-link">carinvid@gmail.com</a>
     <ul class="social-list">
       <li class="social-list__item">
         <a class="social-list__link" href="Linkedin">LinkenIn</a>
