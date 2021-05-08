@@ -38,6 +38,10 @@
 
 /*end of variables--*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--clr-light);
   color: var(--clr-dark);
@@ -103,6 +107,25 @@ body {
   right: 2em;
   top: 1em;
   z-index: 1000;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburguer {
+  transform: rotate(0.625turn);
+}
+.nav-open .hamburguer::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburguer::after {
+  opacity: 0;
 }
 
 .hamburguer {
