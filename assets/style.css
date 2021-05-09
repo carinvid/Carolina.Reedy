@@ -51,6 +51,26 @@ body {
   line-height: 1.6;
 }
 
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
 /*header*/
 
 .header {
@@ -184,34 +204,16 @@ img {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
 }
 
 .btn:hover {
-  transition: all 0.3s ease;
+  transform: scale(1.1);
   background-color: var(--clr-purple);
   color: var(--clr-light);
 }
 
-h1,
-h2,
-h3 {
-  line-height: 1.1;
-  margin: 0;
-}
-
-strong {
-  font-weight: var(--fw-bold);
-}
-
-h1 {
-  font-size: var(--fs-h1);
-}
-h2 {
-  font-size: var(--fs-h2);
-}
-h3 {
-  font-size: var(--fs-h3);
-}
+/*intro*/
 
 .section__title {
   margin: bottom 0.25em;
@@ -221,7 +223,7 @@ h3 {
   font-weight: var(--fw-reg);
   display: block;
 }
-.section__subtitle-intro {
+.section__subtitle-intro strong {
   display: block;
 }
 
@@ -237,14 +239,6 @@ h3 {
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
-
-.section__subtitle-projects {
-  color: var(--clr-accent);
-  font-weight: var(--fw-bold);
-  margin-bottom: 2em;
-}
-
-/*intro*/
 
 .intro {
   position: relative;
@@ -288,7 +282,7 @@ h3 {
   }
 }
 
-/*MY SKILLS SECTION*/
+/* SKILLS SECTION*/
 
 .my-services {
   background-color: var(--clr-dark);
@@ -314,7 +308,7 @@ h3 {
   opacity: 0.25em;
 }
 .services {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .skill {
@@ -322,6 +316,29 @@ h3 {
   margin: 0 auto;
   color: var(--clr-light);
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > .services {
+  margin: 10px;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services + .services {
+    margin-left: 2em;
+  }
+}
+
 /*about me*/
 
 .about-me {
@@ -361,6 +378,7 @@ h3 {
   .about-me-img {
     grid-area: img;
     position: relative;
+    z-index: 2;
   }
 }
 
@@ -370,6 +388,12 @@ h3 {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
+}
+
+.section__subtitle-projects {
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2em;
 }
 
 .portfolio {
@@ -407,6 +431,10 @@ h3 {
   font-size: var(--fs-h3);
 }
 
+.footer-link {
+  font-weight: var(--fw-bold);
+}
+
 .footer a {
   color: inherit;
   text-decoration: none;
@@ -436,14 +464,4 @@ h3 {
 
 .social-list__link {
   padding: 0.5em;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.flex-container > .services {
-  margin: 10px;
-  text-align: center;
 }
