@@ -45,7 +45,6 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
-  
 }
 
 h1,
@@ -462,7 +461,3 @@ img {
 .social-list__link {
   padding: 0.5em;
 }
-@media (min-width: 680px) {
-  .footer {
-    display: ;
-  }
