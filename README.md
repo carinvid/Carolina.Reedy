@@ -1,4 +1,15 @@
 # Carolina.Reedy
 
-This document contains my personal information, my education, my skills and my proyects.
-screenshot(../assets/images/PortfolioScreenS.jpg)
+A website that contains information about me and professional portfolios
+
+##Built with
+*HTML
+*CSS
+\*Javascript
+
+##Website https://carinvid.github.io/Carolina.Reedy/
+
+##ScreenShot![](./assets/images/PortfolioScreenS.jpg)
+
+Contribution
+Made by Carolina Reedy
