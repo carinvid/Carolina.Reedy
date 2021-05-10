@@ -38,10 +38,6 @@
 
 /*end of variables--*/
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: var(--clr-light);
   color: var(--clr-dark);
@@ -54,7 +50,7 @@ body {
 h1,
 h2,
 h3 {
-  line-height: 1.1;
+  line-height: 1;
   margin: 0;
 }
 
@@ -221,7 +217,7 @@ img {
 
 .section__title-intro {
   font-weight: var(--fw-reg);
-  display: block;
+  /*display: block;*/
 }
 .section__subtitle-intro strong {
   display: block;
@@ -278,7 +274,7 @@ img {
     text-align: right;
     position: relative;
     left: -1.5em;
-    width: calc(100% + 1.5em);
+    width: 100%;
   }
 }
 
@@ -350,7 +346,7 @@ img {
   box-shadow: var(--bs);
 }
 
-@media (min-width: 680px) {
+@media (min-width: 600px) {
   .about-me {
     display: grid;
     grid-template-columns: 1fr 200px;
@@ -465,3 +461,7 @@ img {
 .social-list__link {
   padding: 0.5em;
 }
+@media (min-width: 680px) {
+  .footer {
+    display: ;
+  }
