@@ -10,6 +10,6 @@ A website that contains information about me and professional portfolios
 ###Website
 https://carinvid.github.io/Carolina.Reedy/
 
-####ScreenShot ![](../assets/images/PortfolioScreenS.jpg)
+####ScreenShot ![](./assets/images/PortfolioScreenS.jpg)
 
 Made by Carolina Reedy
